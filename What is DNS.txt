@@ -1,0 +1,84 @@
+🧑‍💻 DNS (Domain Name System)
+
+DNS is a globally distributed, hierarchical database that is crucial for internet functionality. It translates human-readable domain names 🌐 (e.g., `example.com`) into numerical IP addresses 🔢 (e.g., `192.0.2.44`), making the internet more accessible for users.
+
+---
+
+ 🌍 How DNS Works
+
+1. DNS Resolution 🔄: 
+   - Converts domain names into IP addresses.
+   - Allows users to type easy-to-remember names instead of complex IP addresses.
+   
+2. DNS Database 🗂️:
+   - Distributed globally 🌏.
+   - Organized in a hierarchical structure, called domains.
+
+---
+
+ 🏗️ Domain Hierarchy
+
+               [ Root (.) ]                     <-- Root Domain 🌟
+                   |
+          ---------------------
+         |         |           |
+      [ .com ]  [ .org ]    [ .net ]            <-- Top-Level Domains (TLD) 🏷️
+         |                   
+    -----------------
+   |                 |
+[ example.com. ] [ example2.com. ]              <-- Second-Level Domains (SLD) 🏠
+     |                    
+ [ www.example.com. ]                            <-- Third-Level Domain (Subdomain) 🧩
+
+
+1. Root Domain 🌟:
+   - The topmost level in the hierarchy.
+   - Represented by a null character (`.`), often implied and not written.
+   
+2. Top-Level Domains (TLDs) 🏷️:
+   - Directly below the root.
+   - Types:
+     - Country-Code TLDs (ccTLDs) 🌏: Assigned to countries (e.g., `.uk`, `.in`, `.kr`).
+     - Generic TLDs (gTLDs) 🔗: For general use (e.g., `.com`, `.net`, `.org`).
+
+3. Second-Level Domains (SLDs) 🏠:
+   - Come after TLDs.
+   - Example: In `www.example.com`, `example` is the SLD.
+   - First part of a domain that users can purchase.
+
+4. Third-Level Domains 🧩:
+   - Follow SLDs.
+   - Example: In `www.example.com`, `www` is the third-level domain.
+   - Referred to as subdomains.  
+   - Additional levels (e.g., fourth-level domains) can follow.
+
+---
+
+ 🌐 Fully Qualified Domain Name (FQDN)
+
+- The complete address of an endpoint (e.g., website or system).
+- Example: `www.example.com.`  
+- Includes:
+  - Root Domain 🌟
+  - TLD 🏷️
+  - SLD 🏠
+  - All Subdomains 🧩
+
+---
+
+ 🌲 Domain Tree Structure
+
+- DNS hierarchy is visualized as a tree 🌳:
+  - Root domain at the top.
+  - TLDs, SLDs, and subdomains form the branches.
+  - Example:
+    - `www.example.com` is a branch at the third-level domain.
+    - `example.com.` is the SLD.
+
+---
+
+ 📊 Key Takeaways 
+
+- DNS simplifies the internet 🖥️ by translating human-friendly names 🌐 into machine-readable IPs 🔢.
+- The hierarchy ensures scalability and efficient organization.
+- FQDNs specify the complete path to access endpoints.
